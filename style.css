@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', 'sans-serif';
+  font-size: 1.2rem;
+}
+
+/*the app*/
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+/*text*/
+.text {
+  margin-top: 3rem;
+  text-align: center;
+}
+.text h1 {
+  margin-bottom: 1rem;
+}
+/* pads*/
+.pads {
+  width: 100%;
+  display: flex;
+}
+.pads div {
+  flex: 1;
+  height: 100px;
+  color: white;
+  text-shadow: black 2px 0px 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.pad1 {
+  background-color: lightblue;
+}
+.pad2 {
+  background-color: lightcoral;
+}
+.pad3 {
+  background-color: lightcyan;
+}
+.pad4 {
+  background-color: lightgreen;
+}
+.pad5 {
+  background-color: lightpink;
+}
+.pad6 {
+  background-color: #ffffbb;
+}
+.bubble {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+}
+
+/*Animation*/
+@keyframes jump {
+  0% {
+    bottom: 0%;
+    left: 20%;
+  }
+  50% {
+    bottom: 50%;
+    left: 50%;
+  }
+  100% {
+    bottom: 0%;
+    left: 80%;
+  }
+}
